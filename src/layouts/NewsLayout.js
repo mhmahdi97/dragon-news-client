@@ -6,16 +6,14 @@ import LeftNav from '../pages/shared/LeftNav/LeftNav';
 import RightNav from '../pages/shared/RightNav/RightNav';
 import { Outlet } from 'react-router-dom';
 
-const Main = () => {
+const NewsLayout = () => {
     return (
         <div>
             <Header></Header>
              <Container className='mt-4'>
                 <Row>
-                    <Col lg={3}>
-                        <LeftNav></LeftNav>
-                    </Col>
-                    <Col lg={6}>
+                    
+                    <Col lg={9}>
                         {/* <h2 className='text-center'>Main Content coming</h2> */}
                         <Outlet></Outlet>
                     </Col>
@@ -29,4 +27,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default NewsLayout;
